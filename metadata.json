@@ -1,0 +1,6 @@
+{
+  "name": "مصنع الجزيرة للصناعات الهندسية الحديثة | Al-Jazira Industries",
+  "description": "مصنع الجزيرة للصناعات الهندسية الحديثة - رائدون في تصنيع العجانات الكهربائية والأفران الصناعية وقطع الغيار الأصلية وصيانتها في مصر منذ عام 2001.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

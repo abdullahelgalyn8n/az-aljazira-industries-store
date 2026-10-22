@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cairo', 'IBM Plex Sans Arabic', sans-serif;
+    --font-sans: 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+    --font-mono: 'JetBrains Mono', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+  }
+
+  html, body {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    direction: rtl;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans-ar {
+  font-family: var(--font-sans);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
