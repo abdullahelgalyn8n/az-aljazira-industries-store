@@ -338,47 +338,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         )}
       </header>
 
-      {/* Dedicated Route / Shareable URL Bar (Shows current page URL & quick copy) */}
-      <div className="bg-stone-100 border-b border-stone-200/90 text-xs text-stone-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-2 overflow-x-auto">
-            <span className="font-bold text-stone-800 whitespace-nowrap">
-              رابط الصفحة الحالي:
-            </span>
-            <code
-              dir="ltr"
-              className="font-mono-num text-[11px] bg-white border border-stone-300 text-stone-900 px-2.5 py-0.5 rounded select-all"
-            >
-              {decodeURIComponent(currentFullPath)}
-            </code>
-            <button
-              type="button"
-              onClick={handleCopyPageLink}
-              className="inline-flex items-center gap-1 text-[#8A5606] hover:text-stone-950 font-bold transition-colors whitespace-nowrap cursor-pointer"
-            >
-              {copiedUrl ? (
-                <>
-                  <Check className="w-3.5 h-3.5 text-emerald-700" />
-                  <span className="text-emerald-800">تم النسخ</span>
-                </>
-              ) : (
-                <>
-                  <Link2 className="w-3.5 h-3.5" />
-                  <span>نسخ الرابط</span>
-                </>
-              )}
-            </button>
-          </div>
-
-          <div className="hidden md:flex items-center gap-3 text-stone-700 font-medium">
-            <span>شحن لجميع المحافظات</span>
-            <span aria-hidden="true">·</span>
-            <span dir="ltr" className="font-mono-num font-semibold text-stone-900">
-              +20 106 5050165
-            </span>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Main Content */}
       <main className="flex-1">{children}</main>
